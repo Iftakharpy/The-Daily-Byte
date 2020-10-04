@@ -18,3 +18,6 @@ def test_case_3() -> None:
 
 def test_case_4() -> None:
     assert first_unique_character("lalala") == -1
+
+def test_case_5() -> None:
+    assert first_unique_character("loveleetcode") == 2
