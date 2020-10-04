@@ -1,0 +1,11 @@
+# ignoring pycache
+**/__pycache__/
+
+# ignoring pytest cache
+**/.pytest_cache/
+
+# ignoring log files
+*.log
+
+# ignoring vscode preferences
+**/.vscode/
