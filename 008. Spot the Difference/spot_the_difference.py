@@ -1,7 +1,7 @@
 # O(n+m) time complexity
 # O(n) space complexity
 # here O(n) -> O(1) because
-# we are storing 26 characters in the hash map. 
+# we are storing 26 characters in worst case in the hash map.
 # "string and target which only consist of lowercase letters" - according to the problem statement
 def spot_the_difference(string: str, target: str) -> str:
     lookup_table = {}
