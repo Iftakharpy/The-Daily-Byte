@@ -43,11 +43,12 @@ def create_files(question_name: str) -> None:
 
     with open(question_file_name,"w") as f:
         f.write(f"# {question_name}\n\n")
-        pass
+    
     with open(solution_file_name,"w") as f:
-        pass
+        f.write(f"def {name}() -> None:\n\tpass")
+    
     with open(test_file_name,"w") as f:
-        pass
+        f.write(f"import pytest\nfrom {name} import {name}\n\n")
 
 
 def make_question_dir(directory_name: str) -> None:
