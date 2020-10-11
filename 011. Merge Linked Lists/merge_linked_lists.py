@@ -52,20 +52,8 @@ def merge_linked_lists(first_ll: Node , second_ll: Node) -> Node:
 				ref.next = temp
 				ref = temp
 		
-		#trying ot merge the second linked list if it is not exausted
-		while second_ll!=None:
-			s_val = second_ll.val
-			temp = Node(s_val)
-			ref.next = temp
-			ref = temp
-			second_ll = second_ll.next
-		#trying ot merge the first linked list if it is not exausted
-		while first_ll!=None:
-			f_val = first_ll.val
-			temp = Node(f_val)
-			ref.next = temp
-			ref = temp
-			first_ll = first_ll.next
-		
+		# #trying ot merge any of the linked list that's not exausted
+		ref.next = first_ll or second_ll
+
 		#returning the reference
 		return ans
