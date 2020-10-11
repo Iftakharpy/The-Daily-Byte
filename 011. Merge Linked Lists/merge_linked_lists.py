@@ -52,7 +52,7 @@ def merge_linked_lists(first_ll: Node , second_ll: Node) -> Node:
 				ref.next = temp
 				ref = temp
 		
-		# #trying ot merge any of the linked list that's not exausted
+		# #trying to merge any of the linked list that's not exausted
 		ref.next = first_ll or second_ll
 
 		#returning the reference
